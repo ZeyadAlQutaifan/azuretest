@@ -12,13 +12,16 @@ import java.util.List;
 public class DemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+
+
+		SpringApplication.run(DemoApplication.class, args);
     }
 
 }
 
 @RestController("/greeting")
 class Test {
+	List<User> users = new ArrayList<>();
     @GetMapping("/")
     public String greeting() {
         return "hello";
@@ -34,14 +37,14 @@ class Test {
     @GetMapping("/users")
     public List<User> getUsers() {
 		int id = 0 ;
-        List<User> users = new ArrayList<>();
-		users.add(new User(id ++ , "zeyad", "zeyad21kh", "zeyad@ze.com"));
-		users.add(new User(id ++ , "zeyad", "zeyad21kh", "zeyad@ze.com"));
-		users.add(new User(id ++ , "zeyad", "zeyad21kh", "zeyad@ze.com"));
-		users.add(new User(id ++ , "zeyad", "zeyad21kh", "zeyad@ze.com"));
-
+		users.add(new User(id ++ , "ahmad", "zeyad21kh", "zeyad@ze.com"));
+		users.add(new User(id ++ , "mohammad", "aaaa", "zeyad@ze.com"));
+		users.add(new User(id ++ , "ali", "ahd5ddf", "zeyad@ze.com"));
+		users.add(new User(id ++ , "khalid", "id44fff", "zeyad@ze.com"));
 		return users;
     }
+
+
 
 }
 
