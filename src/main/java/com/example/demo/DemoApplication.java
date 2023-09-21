@@ -23,6 +23,8 @@ class Test{
 
 	@GetMapping("/hello")
 	public String hello(){
-		return "Hello Nadia\n This is the first web service in my project \n I have decide to make the first end-point return Your name, \n LOVE YOU";
+		return "<h2> Hello Nadia\n This is the first web service in my project </h2>" +
+				"<br> <h2>I have decide to make the first end-point return Your name,</h2> " +
+				"<h1>LOVE YOU</h1>";
 	}
 }
