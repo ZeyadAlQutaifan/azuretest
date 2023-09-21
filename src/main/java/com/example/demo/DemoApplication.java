@@ -22,10 +22,6 @@ public class DemoApplication {
 @RestController("/greeting")
 class Test {
 	List<User> users = new ArrayList<>();
-    @GetMapping("/")
-    public String greeting() {
-        return "hello";
-    }
 
     @GetMapping("/hello")
     public String hello() {
