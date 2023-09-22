@@ -1,7 +1,6 @@
 package com.example.demo.users.controllers;
 
 
-import com.example.demo.users.models.LoginResult;
 import com.example.demo.users.services.LoginService;
 import com.example.demo.util.Global;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,5 @@
 package com.example.demo.users.services;
 
-import com.example.demo.users.models.LoginResult;
 import com.example.demo.users.models.User;
 import com.example.demo.users.repositories.UsersRepository;
 import com.example.demo.util.Constant;
