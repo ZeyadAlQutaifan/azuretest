@@ -23,10 +23,10 @@ public class Post {
     public Post(int id, String content, LocalDateTime creationDate, LocalDateTime lastUpdateDate, Integer likesCount, Integer commentsCount, Integer userId) {
         this.id = id;
         this.content = content;
-        this.creationDate = creationDate;
-        this.lastUpdateDate = lastUpdateDate;
-        this.likesCount = likesCount;
-        this.commentsCount = commentsCount;
+        this.creationDate = LocalDateTime.now();
+        this.lastUpdateDate = LocalDateTime.now();
+        this.likesCount = 0;
+        this.commentsCount = 0;
         this.userId = userId;
     }
 
